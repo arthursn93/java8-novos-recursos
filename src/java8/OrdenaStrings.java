@@ -22,6 +22,18 @@ public class OrdenaStrings {
 
 		// Imprimi cada palavra (lambda)
 		palavras.forEach(s -> System.out.println(s));
+		
+		// Testando um Runnable (lambda)
+		new Thread(() -> System.out.println("Executando um Runnable")).start();
+		
+		List<Double> numero = new ArrayList<Double>();
+		numero.add(26.60);
+		numero.add(97.65);
+		
+		// Somando numeros (lambda)
+		double sum = numero.stream().mapToDouble(n -> n).sum();
+		System.out.println(sum);
+		
 	}
 }
 
